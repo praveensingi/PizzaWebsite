@@ -14,5 +14,92 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    padding: 0;
+    margin-bottom: 60px;
+    background: #EFEFEF;
+}
+
+.navbar {
+    background: #ca2521;
+}
+
+.nav-link,
+.navbar-brand {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Welcoming */
+.welcoming {
+    left: 30%;
+    position: absolute;
+    top: 20%;
+    transform: translate(-70%, -80%);
+    text-align: left;
+}
+
+.welcoming h1 {
+    color: white;
+}
+
+.welcoming p {
+    color: #dbdbdb;
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+.welcoming a {
+    border: 1px solid #ca2521;
+    background: #ca2521;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+.welcoming a:hover {
+    border: 1px solid #009E60;
+    background: #009E60;
+    color: #000;
+}
+
+/* Homepage */
+.backgroundimage {
+    background-image: url('../Images/hp_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Popular Choices */
+.popular {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+    padding-top: 1em
+}
+
+.popular .feature-title {
+    color: #ca2521;
+}
+
+.popular img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+
+.popular h2 {
+    color: #eca442;
+    text-align: center;
 }

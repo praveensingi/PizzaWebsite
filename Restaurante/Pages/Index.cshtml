@@ -4,7 +4,71 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IS7012 Restaurant Webpage</title>
+    </head>
+
+    <body>
+
+        <div class="container-fluid px-0">
+            <div class="row g-0 backgroundimage"></div>
+        </div>
+
+        <div class="welcoming">
+            <h1>Welcome to Bearcat Pizza!</h1>
+            <p>Quality pizza and quick deliveries</p>
+            <p>All from the touch of your fingertips</p>
+            <a asp-page="/CreateOrder" class="btn btn-outline-secondary btn-lg" role="button">Order Now!</a>
+        </div>
+
+
+        <div class="container popular">
+            <h2>Some of Our Customer Favorites!</h2>
+            <hr />
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="feature-title">Neapolitan</h3>
+                    <img src="./Images/neapolitan.jpeg" class="img-fluid">
+                <p>Our mouth watering Neapolitan pizza will melt in your mouth. Made daily from fresh ingredients from the local farmer’s market.</p>
+                    <figure>
+                        <blockquote class="blockquote">
+                        <p>"The Neapolitan is my favorite at Bearcat Pizza, it’s the best around. The tomatoes are so fresh the sauce is rich in flavor and retains much of the liquid of a fresh tomato."</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">Tony Stark</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="feature-title">Chicago Style</h3>
+                    <img src="./Images/chicago.jpg" class="img-fluid">
+                <p>The Chicago style pizza, made for all the deep-dish pizza lovers. Treat yourself to one pizza that can do a lot of damage. Customers have begun calling it the “Al Capone”.</p>
+                    <figure>
+                        <blockquote class="blockquote">
+                        <p>"As a deep-dish pizza lover, the crust on this one is always fantastic, and the flavors will make your taste buds water."</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">Zendaya</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="feature-title">NY Sicilian</h3>
+                    <img src="./Images/nysicilian.jpg" class="img-fluid">
+                <p>Inspired by the Sicilian heritage in New York City. The NY Sicilian is full of flavor with a thick airy crust and crisp bottom cooked to perfectiono</p>
+                    <figure>
+                        <blockquote class="blockquote">
+                        <p>"Bearcat Pizza’s NY Sicilian is even better than hometown pizza’s I had when I grew up around New York. I often get a large order of it and split it amongst my friends. It’s a square pizza too, so there’s plenty of slices to go around!"</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">Peter Parker</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
