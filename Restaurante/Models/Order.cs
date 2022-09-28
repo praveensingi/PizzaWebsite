@@ -23,7 +23,7 @@
 
         public int StaffId { get; set; }
 
-        public List<FoodItem> FoodItems { get; set; }
+        public List<OrderFoodItem> OrderFoodItems { get; set; }
 
 
     }

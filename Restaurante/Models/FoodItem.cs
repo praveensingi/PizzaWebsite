@@ -13,7 +13,7 @@
 
         public string Description { get; set; }
 
-        public List<Order>? Orders { get; set; }
+        public List<OrderFoodItem>? OrderFoodItems { get; set; }
 
     }
 }
