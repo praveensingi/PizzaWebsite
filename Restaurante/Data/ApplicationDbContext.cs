@@ -10,17 +10,12 @@ namespace Restaurante.Data
             : base(options)
         {
         }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<OrderFoodItem>()
-                .HasKey(cs => new { cs.OrderId, cs.FoodItemId });
-        }
-
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<FoodItem> FoodItems { get; set; }
-
-        public DbSet<OrderFoodItem> OrderFoodItems { get; set; }
+        public DbSet<Restaurante.Models.Order> Order { get; set; }
+        public DbSet<Restaurante.Models.FoodItem> FoodItem { get; set; }
+        public DbSet<Restaurante.Models.OrderFoodItem> OrderFoodItem { get; set; }
+        public DbSet<Restaurante.Models.City> City { get; set; }
+        public DbSet<Restaurante.Models.Customer> Customer { get; set; }
+        public DbSet<Restaurante.Models.Staff> Staff { get; set; }
 
     }
 }
