@@ -7,7 +7,7 @@
         public int? OrderId { get; set; }
         public FoodItem? FoodItem { get; set; }
         public int? FoodItemId { get; set; }
-        public int? Quantity { get; set; }
+        public int Quantity { get; set; }
 
     }
 }
