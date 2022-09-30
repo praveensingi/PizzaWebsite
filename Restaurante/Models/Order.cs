@@ -10,12 +10,13 @@ namespace Restaurante.Models
         [Required()]
         public int Quantity { get; set; }
 
-        [Required()]
         [DisplayName("Order Date")]
+        [Required()]
         [DataType(DataType.Date)]
         public DateTime OrderDate { get; set; }
 
         [DisplayName("Total Cost")]
+        [Required()]
         public decimal TotalCost { get; set; }
 
         public Customer? Customer { get; set; }
