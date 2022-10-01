@@ -7,18 +7,10 @@ namespace Restaurante.Models
     {
         public int Id { get; set; }
 
-        [Required()]
-        public int Quantity { get; set; }
-
         [DisplayName("Order Date")]
         [Required()]
         [DataType(DataType.Date)]
         public DateTime OrderDate { get; set; }
-
-        [DisplayName("Total Cost")]
-        [Required()]
-        [DataType(DataType.Currency)]
-        public decimal TotalCost { get; set; }
 
         public Customer? Customer { get; set; }
 
