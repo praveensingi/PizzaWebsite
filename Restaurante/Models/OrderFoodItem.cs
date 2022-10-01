@@ -14,7 +14,7 @@ namespace Restaurante.Models
         [DisplayName("Food Item")]
         public FoodItem? FoodItem { get; set; }
 
-        [DisplayName("Food Item Id")]
+        [DisplayName("Food Item Name")]
         public int? FoodItemId { get; set; }
         public int Quantity { get; set; }
     }

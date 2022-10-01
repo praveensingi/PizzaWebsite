@@ -17,6 +17,7 @@ namespace Restaurante.Models
 
         [DisplayName("Total Cost")]
         [Required()]
+        [DataType(DataType.Currency)]
         public decimal TotalCost { get; set; }
 
         public Customer? Customer { get; set; }

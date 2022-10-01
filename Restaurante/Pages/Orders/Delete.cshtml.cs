@@ -29,7 +29,10 @@ namespace Restaurante.Pages.Orders
                 return NotFound();
             }
 
-            var order = await _context.Order.FirstOrDefaultAsync(m => m.Id == id);
+            var order = await _context.Order
+                .Include(c => c.Customer)
+                .Include(s => s.Staff)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             if (order == null)
             {
