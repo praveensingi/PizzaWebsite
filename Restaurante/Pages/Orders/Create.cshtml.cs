@@ -21,8 +21,8 @@ namespace Restaurante.Pages.Orders
 
         public IActionResult OnGet()
         {
-        ViewData["CustomerId"] = new SelectList(_context.Customer, "Id", "Id");
-        ViewData["StaffId"] = new SelectList(_context.Set<Staff>(), "Id", "Id");
+        ViewData["CustomerId"] = new SelectList(_context.Customer, "Id", "FirstName");
+        ViewData["StaffId"] = new SelectList(_context.Set<Staff>(), "Id", "FirstName");
             return Page();
         }
 
