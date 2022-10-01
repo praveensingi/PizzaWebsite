@@ -59,6 +59,9 @@
                     @Html.DisplayNameFor(model => model.Order.OrderFoodItems[0].FoodItem.Type)
                 </th>
                 <th>
+                    @Html.DisplayNameFor(model =>model.Order.OrderFoodItems[0].Quantity)
+                </th>
+                <th>
                     @Html.DisplayNameFor(model =>model.Order.OrderFoodItems[0].FoodItem.Price)
                 </th>
                 <th></th>
@@ -78,8 +81,12 @@
                         @Html.DisplayFor(modelItem => item.FoodItem.Type)
                     </td>
                     <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
                         @Html.DisplayFor(modelItem => item.FoodItem.Price)
                     </td>
+
                     <td>
                         <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                         <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
@@ -90,10 +97,10 @@
             <tr>
                 <th></th>
                 <th></th>
-                <th>Total Cost</th>
-                <th>@Model.Order.OrderFoodItems.Sum(x => x.FoodItem.Price)</th>
                 <th></th>
-
+                <th>Total Cost</th>
+                <th>@Model.Order.OrderFoodItems.Sum(x => (x.FoodItem.Price * x.Quantity))</th>
+                <th></th>
             </tr>
         </tbody>
     </table>

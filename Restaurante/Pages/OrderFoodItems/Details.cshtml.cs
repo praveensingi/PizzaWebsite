@@ -28,7 +28,10 @@ namespace Restaurante.Pages.OrderFoodItems
                 return NotFound();
             }
 
-            var orderfooditem = await _context.OrderFoodItem.FirstOrDefaultAsync(m => m.Id == id);
+            var orderfooditem = await _context.OrderFoodItem
+                .Include(o => o.Order)
+                .Include(f => f.FoodItem)
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (orderfooditem == null)
             {
                 return NotFound();
