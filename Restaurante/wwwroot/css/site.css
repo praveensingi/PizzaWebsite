@@ -72,21 +72,22 @@ body {
     height: 100vh;
 }
 
-.container-fluid {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/*#background .container-fluid {
+/*.container-fluid {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
     margin-right: auto;
     margin-left: auto;
 }*/
+
+.px-0 {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
 
 /* Popular Choices */
 .popular {

@@ -37,7 +37,7 @@ namespace Restaurante.Pages.Orders
             }
             Order = order;
            ViewData["CustomerId"] = new SelectList(_context.Customer, "Id", "FirstName");
-           ViewData["StaffId"] = new SelectList(_context.Set<Staff>(), "Id", "FirstName");
+           ViewData["StaffId"] = new SelectList(_context.Staff, "Id", "FirstName");
             return Page();
         }
 
