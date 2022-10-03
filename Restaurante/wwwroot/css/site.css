@@ -72,14 +72,6 @@ body {
     height: 100vh;
 }
 
-/*.container-fluid {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-}*/
-
 .px-0 {
     width: 100vw;
     position: relative;
@@ -111,4 +103,53 @@ body {
 .popular h2 {
     color: #eca442;
     text-align: center;
+}
+
+/*Order Form*/
+.order-form .container {
+    color: #4c4c4c;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+}
+
+.order-form-label {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-form-input {
+    width: 100%;
+    padding: 8px 8px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 3px !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: transparent;
+    border-color: #cccccc;
+}
+
+.btn-submit {
+    border: 1px solid #ca2521;
+    background: #ca2521;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+.btn-submit:hover {
+    border: 1px solid #009E60;
+    background: #009E60;
+    color: #000;
+}
+
+.order-form {
+    padding-top: 1rem; 
+}
+
+.order-form h1 {
+    color: #eca442;
 }
