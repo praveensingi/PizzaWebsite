@@ -13,8 +13,9 @@ namespace Restaurante.Pages
 
         public int TotalTodayOrders { get; set; }
 
-        public decimal TotalTodayRevenue { get; set; }
+        public int TotalFoodItems { get; set; }
 
+        public int TotalDrinks { get; set; }
         public int TotalOrders { get; set; }
 
         public decimal TotalRevenue { get; set; }
@@ -37,6 +38,15 @@ namespace Restaurante.Pages
                 foreach(var orderedfooditem in order.OrderFoodItems)
                 {
                     var item = await _context.FoodItem.FirstOrDefaultAsync(m => m.Id == orderedfooditem.Id);
+                    if(item.Type == "drink")
+                    {
+                        TotalDrinks += orderedfooditem.Quantity;
+                    }
+                    else
+                    {
+                        TotalFoodItems += orderedfooditem.Quantity;
+                    }
+
                     TotalRevenue +=  orderedfooditem.Quantity * item.Price;
                 }
             }
