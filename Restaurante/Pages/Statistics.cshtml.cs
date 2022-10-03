@@ -37,7 +37,7 @@ namespace Restaurante.Pages
             foreach(var order in orders){
                 foreach(var orderedfooditem in order.OrderFoodItems)
                 {
-                    var item = await _context.FoodItem.FirstOrDefaultAsync(m => m.Id == orderedfooditem.Id);
+                    var item = await _context.FoodItem.FirstOrDefaultAsync(m => m.Id == orderedfooditem.FoodItemId);
                     if(item.Type == "drink")
                     {
                         TotalDrinks += orderedfooditem.Quantity;
