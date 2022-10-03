@@ -1,0 +1,30 @@
+﻿@page
+
+@model Restaurante.Pages.StatisticsModel
+@{
+    ViewData["Title"] = "Statistics";
+}
+
+<h4> Platform Statistics</h4>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Total Customers
+        <span class="badge badge-primary badge-pill text-bg-dark">@Model.TotalCustomers</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Orders Placed Today
+        <span class="badge badge-primary badge-pill text-bg-dark">@Model.TotalTodayOrders</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Total Revenue Today
+        <span class="badge badge-primary badge-pill text-bg-dark">@Model.TotalTodayRevenue</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Total Orders
+        <span class="badge badge-primary badge-pill text-bg-dark">@Model.TotalOrders</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Total Revenue
+        <span class="badge badge-primary badge-pill text-bg-dark">@Model.TotalRevenue</span>
+    </li>
+</ul>
