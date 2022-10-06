@@ -146,6 +146,7 @@
                     }
                 }
                 totalcost += (price * args.item.Quantity);
+                totalcost = Number(totalcost.toFixed(2));
                 $('#totalcost').html(totalcost);
             },
             onItemDeleted: function (args) {
@@ -158,6 +159,7 @@
                     }
                 }
                 totalcost -= (price * args.item.Quantity);
+                totalcost = Number(totalcost.toFixed(2));
                 $('#totalcost').html(totalcost);
             },
             onItemUpdated: function (args) {
@@ -170,6 +172,7 @@
                 }
                 totalcost -= (price * map.get(args.item.Name));
                 totalcost += (price * args.item.Quantity);
+                totalcost = Number(totalcost.toFixed(2));
                 map.set(args.item.Name, args.item.Quantity);
                 $('#totalcost').html(totalcost);
             },
