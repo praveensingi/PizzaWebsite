@@ -26,6 +26,8 @@ namespace Restaurante.Models
         [StringLength(100, MinimumLength = 1)]
         public string Description { get; set; }
 
+        public string? ImageUrl { get; set; }
+
         public List<OrderFoodItem>? OrderFoodItems { get; set; }
     }
 }
